@@ -3,148 +3,142 @@
 
 ## General idea
 
-This document contains the central classification logic of the step-bunching program.
-
-The classification is based on the behavior of the minimal step-step distance inside a bunch, denoted by \( l_{min} \), when the number of steps in the bunch \( N \) increases.
-
-This criterion leads to two major types of step bunching:
+The central organizing principle of the present step-bunching program is the distinction between two major types of step bunching:
 
 - **B1-type**
 - **B2-type**
 
-The distinction is not merely descriptive. It determines how bunching should be monitored, how scaling should be interpreted, and how theoretical and experimental systems should be grouped.
+The classification is based on the behavior of the **minimal step-step distance inside the bunch**, denoted by \( l_{min} \), when the number of steps in the bunch \( N \) increases. :contentReference[oaicite:0]{index=0}
 
 ## Defining criterion
 
-The classification can be summarized as follows:
+The classification can be stated in its simplest form as follows:
 
-- **B1-type**: when \( N \) increases, the minimal step-step distance in the bunch \( l_{min} \) remains approximately constant.
-- **B2-type**: when \( N \) increases, the minimal step-step distance in the bunch \( l_{min} \) decreases.
+- **B1-type:** when the bunch size \( N \) increases, the minimal step-step distance \( l_{min} \) remains approximately constant.
+- **B2-type:** when the bunch size \( N \) increases, the minimal step-step distance \( l_{min} \) decreases.
 
-This difference immediately implies a second one:
+This immediately leads to the next essential distinction:
 
-- **B1-type** requires **one characteristic length scale**.
-- **B2-type** requires **two characteristic length scales**. :contentReference[oaicite:2]{index=2}
+- **B1-type** requires **one characteristic length scale**
+- **B2-type** requires **two characteristic length scales**
 
 ## Why this classification matters
 
-The classification is important because it organizes a wide family of step-bunching phenomena that had previously been studied in partially disconnected ways.
+This classification is not just a naming convention. It provides:
 
-It also provides a common language for:
+- a unifying language across different theoretical models,
+- a criterion for grouping experimental systems,
+- a basis for scaling analysis,
+- and a framework for monitoring the evolution of bunches in a systematic way. :contentReference[oaicite:3]{index=3}
 
-- numerical modeling,
-- scaling analysis,
-- comparison between different theoretical models,
-- and direct comparison between calculations and experiments.
+In this sense, the classification is one of the conceptual cores of the whole step-bunching program.
 
 ## Monitoring as the operational core
 
-A central feature of the classification program is the use of **two monitoring schemes** running simultaneously.
+The classification is inseparable from the use of two simultaneous monitoring schemes.
 
-### MS-I: time evolution monitoring
+### MS-I: time-evolution monitoring
 
-MS-I is designed to follow the temporal evolution of the system.
-
-Typical quantities include:
+MS-I follows the evolution of the system in time and records quantities such as:
 
 - number of bunches,
 - average number of steps in a bunch \( N \),
-- average bunch width \( L_b \),
-- average terrace width between bunches \( TW \),
-- global minimal step-step distance in the system \( l_{min,g} \).
+- bunch width \( L_b \),
+- terrace width between bunches \( TW \),
+- global minimal step-step distance in the system \( l_{min,g} \). :contentReference[oaicite:4]{index=4}
 
 ### MS-II: size-dependent monitoring
 
-MS-II accumulates information for each bunch size.
-
-Typical quantities include:
+MS-II accumulates information for bunches of different sizes and records quantities such as:
 
 - bunch width \( L_b \),
-- minimal step-step distance in the bunch \( l_{min} \),
-- first step-step distance \( l_1 \),
-- last step-step distance \( l_{last} \). :contentReference[oaicite:5]{index=5}
+- minimal bunch distance \( l_{min} \),
+- first bunch distance \( l_1 \),
+- last bunch distance \( l_{last} \). :contentReference[oaicite:5]{index=5}
 
 ### Why the two schemes matter together
 
-The combination of MS-I and MS-II is not redundant.
+The combination of MS-I and MS-II is not redundant. Their agreement for overlapping dependencies is treated as a non-trivial mutual validation of the monitoring procedure. Moreover, the same pair of schemes can be used to organize experimental data in the same coordinates as numerical results, enabling direct comparison. :contentReference[oaicite:6]{index=6}
 
-Their agreement for matching dependencies is considered a non-trivial mutual validation of the monitoring procedure. Even more importantly, the same pair of schemes can be used to organize experimental data in the same coordinates as numerical results, making direct comparison possible. :contentReference[oaicite:6]{index=6}
-
-This is one of the deepest strengths of the step-bunching program: monitoring is not an auxiliary add-on, but part of the scientific core.
+This is why monitoring in the step-bunching program is not an auxiliary tool, but a central methodological achievement.
 
 ## B1-type
 
 ### Defining property
 
-For B1-type bunching, \( l_{min} \) does not change with increasing bunch size \( N \).
+In B1-type bunching, \( l_{min} \) is not a function of the bunch size \( N \). :contentReference[oaicite:7]{index=7}
 
-### Main consequence
+### Main implication
 
-Only one characteristic length scale is needed to describe the bunching process. :contentReference[oaicite:7]{index=7}
+Only **one characteristic length scale** is needed to describe the bunching process. :contentReference[oaicite:8]{index=8}
 
-### Example used in the classification paper
+### Representative model
 
-The TE-model is used as a representative B1-type case. In that model:
+In the 2012 classification paper, the **TE-model** is used as the representative B1-type case. In this model:
 
 - the slope does not change with increasing bunch size,
 - the slope does not change in time,
-- and the same time-scaling exponent is found for several quantities such as \( N \), \( TW \), and \( L_b \).
+- and one common time-scaling exponent is found for several key quantities.
 
 ### Experimental examples mentioned
 
-Examples of systems showing B1-type behavior include:
+Examples of B1-type behavior mentioned in the paper include:
 
 - Si(113),
 - high-temperature annealing of TaC(910),
-- vicinal Ag(111) in electrolyte. :contentReference[oaicite:9]{index=9}
+- vicinal Ag(111) in electrolyte. :contentReference[oaicite:10]{index=10}
 
 ## B2-type
 
 ### Defining property
 
-For B2-type bunching, \( l_{min} \) decreases with increasing bunch size \( N \).
+In B2-type bunching, \( l_{min} \) decreases when the bunch size \( N \) increases.
 
-### Main consequence
+### Main implication
 
-Two characteristic length scales are needed to describe the bunching process. :contentReference[oaicite:10]{index=10}
+Two characteristic length scales are required to describe the process. :contentReference[oaicite:12]{index=12}
 
-### Example used in the classification paper
+### Representative model
 
-The EvEm-model is used as a representative B2-type case. In that model:
+In the 2012 classification paper, the **EvEm-model** is used as the representative B2-type case. There:
 
-- the bunch with more steps has higher slope,
-- \( l_{min} \), \( l_1 \), and \( l_{last} \) exhibit nontrivial size scaling,
-- and the time evolution carries more structure than in the B1-type case.
+- the bunch slope increases with bunch size,
+- \( l_{min} \), \( l_1 \), and \( l_{last} \) show distinct size scaling,
+- and the time evolution is richer than in the B1-type case.
 
 ### Experimental examples mentioned
 
-Examples of systems showing B2-type behavior include:
+Examples of B2-type systems mentioned in the paper include:
 
 - evaporating Si(111) vicinals,
 - KDP crystal growth,
-- SiC epitaxial growth, although in the latter a careful analysis may also reveal B1-type aspects. :contentReference[oaicite:12]{index=12}
+- SiC epitaxial growth, although the latter may also show more complex behavior after detailed analysis. :contentReference[oaicite:14]{index=14}
 
 ## Programmatic meaning
 
-The B1/B2 classification is not just a way to label plots after the fact.
+The B1/B2 distinction is not only a summary of already known results. It provides a way to structure the whole field:
 
-It provides:
+- models,
+- observables,
+- scaling laws,
+- experiment–theory comparison,
+- and future numerical work.
 
-- a unifying criterion across different models,
-- a way to structure monitoring,
-- a framework for scaling interpretation,
-- and a bridge between theory, numerics, and experiment.
+Because of this, the classification should stand near the center of the repository architecture.
 
-This is why the classification should stand near the center of the repository architecture.
+## Future extensions already indicated in the 2012 paper
 
-## Future development
-
-The classification framework also points toward further work.
-
-Among the directions explicitly indicated in the 2012 paper are:
+The classification framework also points toward further work, including:
 
 - determining the exact time-scaling of \( N \) for available B1-type models,
 - systematic studies of additional B2-type models,
-- and exploration of cases that may lead to what is called **B2m-type**, i.e. simultaneous bunching and meandering. :contentReference[oaicite:13]{index=13}
+- and the exploration of **B2m-type**, i.e. simultaneous bunching and meandering.
 
-In this sense, the classification is not only a summary of past work, but a generator of future research directions.
+## Closing formulation
+
+In its most compact form, the classification can be expressed as follows:
+
+- **B1-type:** \( l_{min} = \mathrm{const} \) with increasing \( N \) → **one length scale**
+- **B2-type:** \( l_{min} \downarrow \) with increasing \( N \) → **two length scales**
+
+This is the conceptual core around which the broader step-bunching program can be organized.
